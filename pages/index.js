@@ -7,7 +7,7 @@ export default function Home() {
   
     return (   
        
-    <div class=" md:w-4/5 w-full h-fit m-auto">
+    <div className=" md:w-4/5 w-full h-fit m-auto">
       <Head>
         <title>
         Next.js E-commerce Product Page 

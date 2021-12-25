@@ -21,8 +21,8 @@ const ImageSide = () => {
                 <Image src = {image} className="rounded-2xl " width={445} height={445} onClick={()=> SetIsModal(true)}/>
             </div>
             <div className="flex gap-5 mt-10 image-indicators">
-                {images.map((img) => (
-                        <div>
+                {images.map((img,idx) => (
+                        <div key={idx}>
                             <Image className="rounded-2xl cursor-pointer" width={88} height={88} data-src= {img} src={img} onClick={(e)=>setImage(e.currentTarget.dataset.src)}></Image>
                         </div>
                     ))}

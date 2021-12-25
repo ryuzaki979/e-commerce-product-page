@@ -16,7 +16,7 @@ const Navbar = () => {
     const [IsMenu,SetIsMenu] = useState(false)
     return (
     <>
-        <header class="flex pl-10 pr-10  justify-between  items-center w-full pt-5 pb-5 md:pl-0 md:pr-0 h-65">
+        <header className="flex pl-10 pr-10  justify-between  items-center w-full pt-5 pb-5 md:pl-0 md:pr-0 h-65">
             <div className="flex  items-center  h-full basis-full">
                 <button className="md:hidden block mr-5" onClick={()=> SetIsMenu(true)}>
                     <Image src={Hamburger} ></Image>
@@ -26,7 +26,7 @@ const Navbar = () => {
                     sneakers
                     </Link>
                 </h1>
-                <nav class="basis-5/12 hidden md:block">
+                <nav className="basis-5/12 hidden md:block">
                     <ul className="flex  justify-between text-slate-400 gap-5">
                         <li className="hover:text-black">
                             <Link href="./collections">
@@ -55,7 +55,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </nav>
-                {IsMenu && <nav class="basis-5/12 fixed top-0 left-0 h-full z-50 w-2/3 md:relative bg-white md:hidden">
+                {IsMenu && <nav className="basis-5/12 fixed top-0 left-0 h-full z-50 w-2/3 md:relative bg-white md:hidden">
                     <button className="block md:hidden ml-10 mt-9 cursor-pointer" onClick={()=>SetIsMenu(false)}>
                         <Image src={Close}></Image>
                     </button>
@@ -104,10 +104,10 @@ const Navbar = () => {
                         {value.quantity}
                     </span>
                 </div>
-                <Image src={Avatar} class="rounded-full cursor-pointer w-1/2 " width={50} height={50}></Image>
+                <Image src={Avatar} className="rounded-full cursor-pointer w-1/2 " width={50} height={50}></Image>
             </div>
         </header>
-        <hr class="bg-slate-100" />
+        <hr className="bg-slate-100" />
         </>
     )
 }

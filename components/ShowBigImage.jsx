@@ -28,7 +28,7 @@ const ShowBigImage = ({images,setModal}) => {
                 </div>
                 <div className="flex gap-5 mt-10  image-indicators justify-center">
                 {images.map((img,inx) => (
-                        <div>
+                        <div key ={inx}>
                             <Image  data-key={inx} width={88} height={88} data-src= {img} src={img} onClick={
                                 (e)=>{
                             SetIndex(e.currentTarget.dataset.key)
