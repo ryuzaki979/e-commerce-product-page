@@ -28,7 +28,7 @@ let cartData = []
                     Fall Limited Edition Sneakers
                 </h1>
                 <p className="mt-5 mb-5 text text-slate-400">
-                    These low-profile sneakers are  your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+                    These low-profile sneakers are  your perfect casual wear companion. Featuring a durable rubber outer sole, they&apos;ll withstand everything the weather can offer.
                 </p>
                 <div>
                     <span className="text-3xl">
